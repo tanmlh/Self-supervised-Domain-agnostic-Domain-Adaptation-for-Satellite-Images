@@ -2,7 +2,7 @@
 Codes for "Self-supervised-Domain-agnostic-Domain-Adaptation-for-Satellite-Images", url: https://arxiv.org/abs/2309.11109
 
 1. Configure the dataset:
-   Check how the dataset is organized in ./data folder.
+   Check how the dataset is organized in ./data folder and in each configuration file in ./configures.
 
 3. Train an image2image network:
 
