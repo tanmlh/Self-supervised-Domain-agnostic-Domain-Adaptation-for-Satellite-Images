@@ -1,0 +1,1 @@
+./inria_splited_512_256/train/images/kitsap26_patch_0000.jpg ./inria_splited_512_256/train/gt/kitsap26_patch_0000.jpg kitsap

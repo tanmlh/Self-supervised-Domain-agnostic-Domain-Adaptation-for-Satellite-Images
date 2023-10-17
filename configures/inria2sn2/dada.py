@@ -2,9 +2,10 @@
 training configures
 """
 debug = False
+dataset_root = './data'
 
 solver_conf = {}
-solver_conf['gpu_ids'] = '7' # set '-1' to disable gpu
+solver_conf['gpu_ids'] = '0' # set '-1' to disable gpu
 solver_conf['solver_name'] = 'dada'
 solver_conf['solver_path'] = 'models.models.dada_model'
 solver_conf['net_path'] = 'models.models.dada_model'
@@ -42,19 +43,19 @@ loader_conf['num_doms'] = 2
 loader_conf['num_workers'] = 4
 
 loader_conf['train_reader_conf'] = {}
-loader_conf['train_reader_conf']['file_path'] = '../../Datasets/Inria/train.txt'
-loader_conf['train_reader_conf']['root_dir'] = '../../Datasets/Inria'
+loader_conf['train_reader_conf']['file_path'] = f'{dataset_root}/Inria/train.txt'
+loader_conf['train_reader_conf']['root_dir'] = f'{dataset_root}/Inria'
 loader_conf['train_reader_conf']['dataset_type'] = 'mul_dom'
 loader_conf['train_reader_conf']['sample_type'] = 'linear'
 
 loader_conf['test_reader_conf'] = {}
-loader_conf['test_reader_conf']['file_path'] = '../../Datasets/DeepGlobe/SN2_train_filtered.txt'
-loader_conf['test_reader_conf']['root_dir'] = '../../Datasets/DeepGlobe'
+loader_conf['test_reader_conf']['file_path'] = f'{dataset_root}/DeepGlobe/SN2_train_filtered.txt'
+loader_conf['test_reader_conf']['root_dir'] = f'{dataset_root}/DeepGlobe'
 loader_conf['test_reader_conf']['dataset_type'] = 'mul_dom'
 loader_conf['test_reader_conf']['sample_type'] = 'dom'
 
 loader_conf['dataset_name'] = 'inria2sn2_v2'
-loader_conf['dataset_dir'] = '../../Datasets'
+loader_conf['dataset_dir'] = dataset_root
 loader_conf['img_H'] = 512
 loader_conf['img_W'] = 512
 loader_conf['num_channels'] = 3

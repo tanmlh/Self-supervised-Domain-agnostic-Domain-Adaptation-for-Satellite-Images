@@ -5,7 +5,7 @@ version = 'dada'
 # version = '1.4.4'
 num_iter = 300000
 debug = False
-dataset_root = '../../Datasets/DeepGlobe/'
+dataset_root = './data/DeepGlobe'
 
 import importlib
 import os
@@ -32,8 +32,9 @@ solver_conf['net_mode'] = 'eval'
 
 loader_conf = conf['loader_conf']
 loader_conf['dataset_name'] = 'inria2sn2_v2'
-loader_conf['dataset_dir'] = '../../Datasets'
-loader_conf['file_list_names'] = ['Vegas', 'Paris', 'Shanghai', 'Khartoum', 'all'][:4]
+loader_conf['dataset_dir'] = dataset_root
+# loader_conf['file_list_names'] = ['Vegas', 'Paris', 'Shanghai', 'Khartoum', 'all']
+loader_conf['file_list_names'] = ['Vegas']
 loader_conf['file_list_str'] = f'{dataset_root}' + '/SN2_test_{}.txt'
 
 loader_conf['test_reader_conf'] = {}

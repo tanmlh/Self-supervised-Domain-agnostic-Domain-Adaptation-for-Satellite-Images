@@ -1,0 +1,1 @@
+./AOI_2_Vegas_Train/imgs/imgs_AOI_2_Vegas_img361.png ./AOI_2_Vegas_Train/labels/AOI_2_Vegas_img361.png Vegas
