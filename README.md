@@ -1,4 +1,6 @@
 # Self-supervised-Domain-agnostic-Domain-Adaptation-for-Satellite-Images
+Codes for "Self-supervised-Domain-agnostic-Domain-Adaptation-for-Satellite-Images", url: https://arxiv.org/abs/2309.11109
+
 1. Configure the dataset:
    Check how the dataset is organized in ./data folder.
 
